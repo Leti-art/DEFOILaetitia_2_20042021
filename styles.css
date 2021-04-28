@@ -1,8 +1,5 @@
-/*mettre les marges à zéro et centrer le contenu*/
-
 * {
     margin: auto;
-    box-sizing: border-box;
 }
 
 body {
@@ -55,4 +52,20 @@ li a {
 
 a:hover {
     text-decoration: overline #0065FC;
+    color: #0065FC;
 }
+
+
+/*Main*/
+
+h1 {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+hgroup {
+    margin-bottom: 20px;
+}
+
+
+/* Barre de recherche*/
