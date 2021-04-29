@@ -7,6 +7,9 @@
     <title>Reservia</title>
     <link rel="stylesheet" href="./styles.css">
 
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -15,8 +18,8 @@
 <body>
     <!--barre de navigation-->
     <header>
+        <img class="logo" src="./images/logo/Reservia@3x.png" alt="logo de reservia">
         <nav class="navbar">
-            <img class="logo" src="./images/logo/Reservia@3x.png" alt="logo de reservia">
             <ul>
                 <li><a class="hebergement" href="#">Hébergement</a></li>
                 <li><a class="activites" href="#">Activités</a></li>
@@ -29,16 +32,35 @@
     <!--Recherche-->
     <main>
         <hgroup>
-            <h1> <strong>Trouver votre hébergement pour des vacances de rêve</strong></h1>
-            <p>En plein centre ville ou en pleine nature</p>
+            <h1 class="titre">Trouver votre hébergement pour des vacances de rêve</h1>
+            <p class="soustitre">En plein centre ville ou en pleine nature</p>
         </hgroup>
 
         <form role="search">
-            <div>
+            <div class="rechercher">
+                <i class="fas fa-map-marker-alt"></i>
                 <input type="search" id="chercher" name="q" placeholder="Marseille, France" size="30">
-                <button>Rechercher</button>
+                <button type="submit">Rechercher</button>
             </div>
         </form>
+
+        <!--Filtres et infos-->
+
+        <div class="filtre">
+            <ul>
+                <li>Economique</li>
+                <li>Familiale</li>
+                <li>Romantique</li>
+                <li>Animaux autorisés</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <i class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponible dans cette ville</p>
+        </div>
+
+
 
 
 

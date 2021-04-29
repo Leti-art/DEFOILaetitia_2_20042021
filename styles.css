@@ -1,15 +1,27 @@
 * {
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
 }
+
+
+/********************/
 
 body {
     background-color: white;
     font-family: 'Raleway', sans-serif;
-    width: 1440px;
 }
 
 
 /*barre de navigation*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .navbar {
     display: flex;
@@ -26,7 +38,6 @@ body {
 ul {
     display: flex;
     text-decoration: none;
-    list-style: none;
 }
 
 li {
@@ -40,19 +51,25 @@ li a {
 
 .login {
     color: #0065FC;
+    padding-top: 40px;
+    border-top: solid transparent;
 }
 
 .hebergement {
+    padding-top: 40px;
+    border-top: solid transparent;
     color: black;
 }
 
 .activites {
+    padding-top: 40px;
+    border-top: solid transparent;
     color: black;
 }
 
 a:hover {
-    text-decoration: overline #0065FC;
     color: #0065FC;
+    border-top: solid #0065FC;
 }
 
 
@@ -69,3 +86,7 @@ hgroup {
 
 
 /* Barre de recherche*/
+
+.rechercher {
+    margin-bottom: 20px;
+}
