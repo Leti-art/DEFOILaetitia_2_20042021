@@ -67,7 +67,12 @@ li a {
     color: black;
 }
 
-a:hover {
+.hebergement:hover {
+    color: #0065FC;
+    border-top: solid #0065FC;
+}
+
+.activites:hover {
     color: #0065FC;
     border-top: solid #0065FC;
 }
