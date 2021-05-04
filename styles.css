@@ -92,28 +92,132 @@ hgroup {
 
 /* Barre de recherche*/
 
-.rechercher {
-    margin-bottom: 20px;
-}
-
 
 /*Filtres*/
 
 .filtres {
+    display: flex;
+    justify-content: space-between;
     font-weight: bolder;
 }
 
-.eco {
-    border: 1px solid gray;
-    border-radius: 50px;
-    padding: 6px 15px 6px 0;
-    cursor: pointer;
-    font-weight: bolder;
-    width: auto;
+.fi {
+    display: flex;
 }
 
-.filtres ul li :hover {
+.fi span {
+    display: flex;
+    margin: 13px 20px 13px 15px;
+}
+
+.titrefiltre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtre1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#billet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem
+}
+
+.filtre2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#homme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem
+}
+
+.filtre3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#coeur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem
+}
+
+.filtre4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#animal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem
+}
+
+.filtre1:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.filtre2:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.filtre3:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.filtre4:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+    cursor: pointer;
 }
 
 
@@ -166,6 +270,7 @@ hgroup {
     height: 120px;
     border: 1px solid white;
     border-radius: 25px 25px 0 0;
+    object-fit: cover;
 }
 
 .Mar {
@@ -217,11 +322,31 @@ aside {
     height: 100%;
     border: 1px solid white;
     border-radius: 25px 0 0 25px;
+    object-fit: cover;
 }
 
 .textpopu {
     display: flex;
-    align-content: flex-end;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.textpopu p {
+    margin-top: 10px;
+}
+
+#popiu {
+    width: 180px;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 25px 0 0 25px;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
