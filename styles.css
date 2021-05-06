@@ -4,16 +4,21 @@
         box-sizing: border-box;
         list-style-type: none;
     }
-    
-    .wrapper {
-        max-width: 3000px;
-        margin: 30px;
-    }
     /********************/
     
     body {
         background-color: white;
         font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Wrapper*/
+    
+    .wrapper {
+        max-width: 1440px;
+        margin: auto;
+        /* grow shrink basis*/
+        flex: 1 0 auto;
     }
     /*barre de navigation*/
     
@@ -33,7 +38,7 @@
         display: flex;
         justify-content: flex-start;
         height: 50px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     .navbar ul {
@@ -43,7 +48,7 @@
     
     .navbar li {
         display: flex;
-        margin: 30px;
+        margin-right: 30px;
     }
     
     li a {
@@ -245,6 +250,7 @@
     .MARPOP {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     /* 1-Hébergements à Marseille*/
     
@@ -293,6 +299,11 @@
     .Mar {
         margin: 10px;
     }
+    
+    .aff {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
     /* 2-Les plus populaires*/
     
     .titre2 {
@@ -339,9 +350,6 @@
     
     .textpopu {
         display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        margin-top: 20px;
     }
     
     .textpopu p {
@@ -352,53 +360,44 @@
         text-decoration: none;
         color: black;
     }
+    
+    .MARPOP a:hover {
+        color: #0065FC;
+    }
     /* 3-Activités à Marseille*/
     /*footer*/
     
     footer {
+        flex-shrink: 0;
+        /* flex-shrink:pour éviter que le footer soit réduit avec flexbox*/
         background-color: #f2f2f2;
+        width: 100%;
     }
     
     .lefooter {
-        margin: 30px;
+        width: 1440px;
+        margin: 0 auto;
         display: flex;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        align-items: flex-start;
+        padding: 40px 0 60px 40px;
     }
     
-    .apropos {
-        padding-right: 300px;
+    .Bloc {
+        width: 25%;
+        margin: 0 80px 0 0;
+    }
+    /*h3*/
+    
+    .apropos h3,
+    .noshebergements h3,
+    .assistance h3 {
+        padding-bottom: 20px;
     }
     
-    .apropos li {
-        padding-top: 10px;
-    }
-    
-    .apropos p {
-        padding-bottom: 10px;
-        font-weight: bold;
-    }
-    
-    .noshebergements {
-        padding-right: 300px;
-    }
-    
-    .noshebergements li {
-        padding-top: 10px;
-    }
-    
-    .noshebergements p {
-        padding-bottom: 10px;
-        font-weight: bold;
-    }
-    
-    .assistance li {
-        padding-top: 10px;
-    }
-    
-    .assistance p {
-        padding-bottom: 10px;
-        font-weight: bold;
+    .liste-ap li,
+    .liste-heb li,
+    .liste-ass li {
+        padding: 5px 0;
     }
     
     .lefooter a:hover {
