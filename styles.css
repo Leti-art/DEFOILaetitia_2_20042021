@@ -38,6 +38,7 @@
         display: flex;
         justify-content: flex-start;
         height: 50px;
+        object-fit: cover;
         margin-top: 30px;
     }
     
@@ -249,41 +250,46 @@
     
     .MARPOP {
         display: flex;
-        justify-content: space-between;
+        justify-content: row;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
+        margin: 40px 0 60px 0;
     }
     /* 1-Hébergements à Marseille*/
     
     .titre1 {
         margin-top: 10px;
-        margin-left: 40px;
     }
     
     .hebergementMar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: rosybrown;
-        width: 900px;
-        height: 600px;
         border: 1px solid white;
         border-radius: 25px;
+        padding: 0 20px;
+        height: 600px;
     }
     
     .container1 {
         display: flex;
         flex-direction: row;
-        display: inline-flex;
         justify-content: center;
+        align-items: center;
+        justify-content: space-around;
         flex-wrap: wrap;
-        width: 900px;
-        height: 500px;
+        width: 850px;
+        height: 480px;
         border: 1px solid white;
         border-radius: 25px;
     }
     
     .HAM {
         width: 250px;
-        height: 200px;
+        height: 210px;
         background-color: white;
-        margin: 15px;
         border: 3px solid white;
         border-radius: 25px;
     }
@@ -301,10 +307,20 @@
     }
     
     .aff {
-        margin-top: 10px;
+        margin-top: 15px;
         margin-left: 40px;
     }
     /* 2-Les plus populaires*/
+    
+    .haut {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .haut i {
+        margin-right: 30px;
+    }
     
     .titre2 {
         margin-top: 10px;
@@ -312,18 +328,21 @@
     }
     
     .populaire {
+        display: flex;
+        flex-direction: column;
         background-color: rgb(43, 144, 226);
-        width: 450px;
-        height: 600px;
         border: 1px solid white;
         border-radius: 25px;
+        height: 600px;
     }
     
     .container2 {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        width: 450px;
+        width: 400px;
         height: 550px;
         border: 1px solid white;
         border-radius: 25px;
@@ -334,7 +353,6 @@
         width: 350px;
         height: 150px;
         background-color: white;
-        margin: 15px;
         border: 3px solid white;
         border-radius: 25px;
     }
@@ -349,12 +367,10 @@
     }
     
     .textpopu {
-        display: flex;
+        margin: 10px 0 0 10px;
     }
     
-    .textpopu p {
-        margin-top: 10px;
-    }
+    .textpopu p {}
     
     a {
         text-decoration: none;
@@ -379,7 +395,7 @@
         margin: 0 auto;
         display: flex;
         align-items: flex-start;
-        padding: 40px 0 60px 40px;
+        padding: 40px 0 60px 60px;
     }
     
     .Bloc {
