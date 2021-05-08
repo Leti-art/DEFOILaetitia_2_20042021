@@ -19,36 +19,33 @@
     <div class="wrapper">
         <!--barre de navigation-->
         <header>
-            <img class="logo" src="./images/logo/Reservia@3x.png" alt="logo de reservia">
-            <nav class="navbar">
-                <ul>
-                    <li><a class="hebergement" href="#">Hébergement</a></li>
-                    <li><a class="activites" href="#">Activités</a></li>
-                    <li><a class="login" href="#"><strong>S'inscrire</strong></a></li>
-                </ul>
-            </nav>
+            <div class="entete">
+                <div class=""><img class="logo" src="./images/logo/Reservia@3x.png" alt="logo de reservia">
+                </div>
 
-        </header>
-
-        <!--Recherche-->
-        <main>
-
+                <nav class="navbar">
+                    <ul>
+                        <li><a class="hebergement" href="#ancrehebergements">Hébergement</a></li>
+                        <li><a class="activites" href="#ancreactivites">Activités</a></li>
+                        <li><a class="login" href="#"><strong>S'inscrire</strong></a></li>
+                    </ul>
+                </nav>
+            </div>
             <!--section 1 Recherche et Filtres-->
+            <div class="rechfiltresinfo">
 
-            <section class="RechercheFiltres">
-                <hgroup>
+                <div class="titres">
                     <h1 class="titre">Trouver votre hébergement pour des vacances de rêve</h1>
                     <p class="soustitre">En plein centre ville ou en pleine nature</p>
-                </hgroup>
+                </div>
 
-                <form role="search">
-                    <div class="rechercher">
-
-                        <i class="fas fa-map-marker-alt"></i>
-                        <input type="search" id="chercher" name="q" placeholder="Marseille, France" size="30">
-                        <button type="submit">Rechercher</button>
-                    </div>
-                </form>
+                <div class="rechercher">
+                    <form role="search"></form>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" id="chercher" name="q" placeholder="Marseille, France" size="30">
+                    <button type="submit">Rechercher</button>
+                    </form>
+                </div>
 
                 <!--Filtres et infos-->
 
@@ -67,14 +64,17 @@
                     <i class="fas fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
+            </div>
+        </header>
 
-            </section>
+        <!--Recherche-->
+        <main>
 
             <!--Section 2: Les hébergements-->
 
             <!--Hébergements à Marseille-->
 
-            <section class="MARPOP">
+            <section class="MARPOP" id="ancrehebergements">
                 <div class="hebergementMar">
                     <div>
                         <h1 class="titre1">Hébergements à Marseille</h1>
@@ -202,7 +202,7 @@
 
             <!--Section 3: Les activités-->
 
-            <section class="lesactivites">
+            <section class="lesactivites" id="ancreactivites">
 
                 <div class="container3">
                     <p>Activités à Marseille</p>
