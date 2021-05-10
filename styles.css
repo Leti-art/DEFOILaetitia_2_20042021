@@ -1,463 +1,538 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        list-style-type: none;
-    }
-    /********************/
-    
-    body {
-        background-color: white;
-        font-family: 'Raleway', sans-serif;
-        display: flex;
-        flex-direction: column;
-    }
-    /*Wrapper*/
-    
-    .wrapper {
-        max-width: 1440px;
-        margin: auto;
-        /* grow shrink basis*/
-        flex: 1 0 auto;
-    }
-    /*barre de navigation*/
-    
-    header {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    
-    .entete {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .navbar {
-        display: flex;
-        margin-bottom: 40px;
-    }
-    
-    .logo {
-        display: flex;
-        justify-content: flex-start;
-        height: 50px;
-        object-fit: cover;
-        margin-top: 30px;
-    }
-    
-    .navbar ul {
-        display: flex;
-        text-decoration: none;
-    }
-    
-    .navbar li {
-        display: flex;
-        margin-right: 30px;
-    }
-    
-    li a {
-        text-decoration: none;
-    }
-    
-    .login {
-        color: #0065FC;
-        padding-top: 40px;
-        border-top: solid transparent;
-    }
-    
-    .hebergement {
-        padding-top: 40px;
-        border-top: solid transparent;
-        color: black;
-    }
-    
-    .activites {
-        padding-top: 40px;
-        border-top: solid transparent;
-        color: black;
-    }
-    
-    .hebergement:hover {
-        color: #0065FC;
-        border-top: solid #0065FC;
-    }
-    
-    .activites:hover {
-        color: #0065FC;
-        border-top: solid #0065FC;
-    }
-    /*Main*/
-    
-    .rechfiltresinfo {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 0 10px 0;
-    }
-    /*titres*/
-    
-    .titres {
-        margin-bottom: 20px;
-    }
-    
-    .titre {
-        font-size: x-large;
-    }
-    
-    .
-    /* Barre de recherche*/
-    
-    .rechercher {
-        display: flex;
-    }
-    
-    form {
-        display: flex;
-        align-items: center;
-        padding: 10px 0 10px 0;
-    }
-    
-    form i {
-        display: flex;
-        align-items: center;
-        border: solid 1px #F2F2F2;
-        border-radius: 10px 0 0 10px;
-        background-color: #f2f2f2;
-        padding: 13px;
-    }
-    
-    form input {
-        border: solid 1px #F2F2F2;
-        padding: 10px;
-        font-size: large;
-    }
-    
-    form button {
-        border: solid 1px #F2F2F2;
-        border-radius: 0 10px 10px 0;
-        background-color: #0065FC;
-        color: white;
-        padding: 10px;
-        font-size: large;
-    }
-    
-    form button:hover {
-        cursor: pointer;
-        color: black;
-        background-color: #f2f2f2;
-    }
-    /*Filtres*/
-    
-    .filtres {
-        display: flex;
-        font-weight: bolder;
-        margin: 40px 0 10px 0;
-    }
-    
-    .fi {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .fi span {
-        display: flex;
-        margin: 13px 20px 13px 15px;
-    }
-    
-    .titrefiltre {
-        display: flex;
-        align-items: center;
-        margin-right: 35px;
-    }
-    
-    .filtre1 {
-        display: flex;
-        align-items: center;
-        border: solid 2px #F2F2F2;
-        border-radius: 25px;
-        background-color: white;
-        margin-right: 35px;
-    }
-    
-    #billet {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #0065FC;
-        background-color: #DEEBFF;
-        border-radius: 100%;
-        height: 3rem;
-        width: 3rem
-    }
-    
-    .filtre2 {
-        display: flex;
-        align-items: center;
-        border: solid 2px #F2F2F2;
-        border-radius: 25px;
-        background-color: white;
-        margin-right: 35px;
-    }
-    
-    #homme {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #0065FC;
-        background-color: #DEEBFF;
-        border-radius: 100%;
-        height: 3rem;
-        width: 3rem
-    }
-    
-    .filtre3 {
-        display: flex;
-        align-items: center;
-        border: solid 2px #F2F2F2;
-        border-radius: 25px;
-        background-color: white;
-        margin-right: 35px;
-    }
-    
-    #coeur {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #0065FC;
-        background-color: #DEEBFF;
-        border-radius: 100%;
-        height: 3rem;
-        width: 3rem
-    }
-    
-    .filtre4 {
-        display: flex;
-        align-items: center;
-        border: solid 2px #F2F2F2;
-        border-radius: 25px;
-        background-color: white;
-        margin-right: 35px;
-    }
-    
-    #animal {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #0065FC;
-        background-color: #DEEBFF;
-        border-radius: 100%;
-        height: 3rem;
-        width: 3rem
-    }
-    
-    .filtre1:hover {
-        color: #0065FC;
-        background-color: #F2F2F2;
-        cursor: pointer;
-    }
-    
-    .filtre2:hover {
-        color: #0065FC;
-        background-color: #F2F2F2;
-        cursor: pointer;
-    }
-    
-    .filtre3:hover {
-        color: #0065FC;
-        background-color: #F2F2F2;
-        cursor: pointer;
-    }
-    
-    .filtre4:hover {
-        color: #0065FC;
-        background-color: #F2F2F2;
-        cursor: pointer;
-    }
-    /*Info*/
-    
-    .info {
-        display: flex;
-        margin: 15px 0 20px 0;
-    }
-    
-    .info i {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #0065FC;
-        background-color: white;
-        border: 1px solid #f2f2f2;
-        border-radius: 100%;
-        height: 2rem;
-        width: 2rem;
-        margin-right: 10px;
-    }
-    
-    .info p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /*blocs: Hebergements à Marseille + Les plus populaires*/
-    
-    .MARPOP {
-        display: flex;
-        justify-content: space-between;
-        margin: 30px 0 60px 0;
-    }
-    /* 1-Hébergements à Marseille*/
-    
-    .titre1 {
-        margin: 30px 0 20px 50px;
-    }
-    
-    .hebergementMar {
-        display: flex;
-        flex-direction: column;
-        background-color: #f2f2f2;
-        border-radius: 25px;
-        width: 65%;
-    }
-    
-    .container1 {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 100%;
-        border-radius: 25px;
-    }
-    
-    .HAM {
-        width: 270px;
-        height: 210px;
-        background-color: white;
-        border: 3px solid white;
-        border-radius: 25px;
-        margin-bottom: 20px;
-        box-shadow: 5px 5px 5px #d1cfcf;
-    }
-    
-    .HAM img {
-        width: 100%;
-        height: 120px;
-        border: 1px solid white;
-        border-radius: 25px 25px 0 0;
-        object-fit: cover;
-    }
-    
-    .Mar {
-        margin-left: 10px;
-    }
-    
-    .Mar h3,
-    .Mar p {
-        margin-bottom: 5px;
-    }
-    
-    .aff {
-        margin: 10px 0 20px 50px;
-    }
-    /* 2-Les plus populaires*/
-    
-    .populaire {
-        display: flex;
-        flex-direction: column;
-        background-color: #f2f2f2;
-        border-radius: 25px;
-        width: 32%;
-    }
-    
-    .haut {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 30px 30px 20px 40px;
-    }
-    
-    .container2 {
-        display: flex;
-        flex-direction: column;
-        border-radius: 25px;
-        width: 80%;
-        margin-left: 40px;
-    }
-    
-    .pop {
-        display: flex;
-        height: 150px;
-        background-color: white;
-        border: 3px solid white;
-        border-radius: 25px;
-        margin-bottom: 20px;
-        box-shadow: 5px 5px 5px #d1cfcf;
-    }
-    
-    .pop img {
-        width: 150px;
-        height: 100%;
-        border: 1px solid white;
-        border-radius: 25px 0 0 25px;
-        object-fit: cover;
-        flex-shrink: 0;
-    }
-    
-    .textpopu {
-        margin-left: 10px;
-    }
-    
-    .textpopu h3 {
-        margin-bottom: 5px;
-    }
-    
-    .stars {
-        margin-top: 50px;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .MARPOP a:hover {
-        color: #0065FC;
-    }
-    /* 3-Activités à Marseille*/
-    /*footer*/
-    
-    footer {
-        flex-shrink: 0;
-        /* flex-shrink:pour éviter que le footer soit réduit avec flexbox*/
-        background-color: #f2f2f2;
-        width: 100%;
-    }
-    
-    .lefooter {
-        width: 1440px;
-        margin: 0 auto;
-        display: flex;
-        align-items: flex-start;
-        padding: 40px 0 60px 60px;
-    }
-    
-    .Bloc {
-        width: 25%;
-        margin: 0 80px 0 0;
-    }
-    /*h3*/
-    
-    .apropos h3,
-    .noshebergements h3,
-    .assistance h3 {
-        padding-bottom: 20px;
-    }
-    
-    .liste-ap li,
-    .liste-heb li,
-    .liste-ass li {
-        padding: 5px 0;
-    }
-    
-    .lefooter a:hover {
-        color: #0065FC;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+        /********************/
+        
+        body {
+            background-color: white;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        /*Wrapper*/
+        
+        .wrapper {
+            max-width: 1440px;
+            margin: auto;
+            /* grow shrink basis*/
+            flex: 1 0 auto;
+        }
+        /*barre de navigation*/
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+        .entete {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .navbar {
+            display: flex;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            height: 50px;
+            object-fit: cover;
+            margin-top: 30px;
+        }
+        
+        .navbar ul {
+            display: flex;
+            text-decoration: none;
+        }
+        
+        .navbar li {
+            display: flex;
+            margin-right: 30px;
+        }
+        
+        li a {
+            text-decoration: none;
+        }
+        
+        .login {
+            color: #0065FC;
+            padding-top: 40px;
+            border-top: solid transparent;
+        }
+        
+        .hebergement {
+            padding-top: 40px;
+            border-top: solid transparent;
+            color: black;
+        }
+        
+        .activites {
+            padding-top: 40px;
+            border-top: solid transparent;
+            color: black;
+        }
+        
+        .hebergement:hover {
+            color: #0065FC;
+            border-top: solid #0065FC;
+        }
+        
+        .activites:hover {
+            color: #0065FC;
+            border-top: solid #0065FC;
+        }
+        /*Main*/
+        
+        .rechfiltresinfo {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0 10px 0;
+        }
+        /*titres*/
+        
+        .titres {
+            margin-bottom: 20px;
+        }
+        
+        .titre {
+            font-size: x-large;
+        }
+        
+        .
+        /* Barre de recherche*/
+        
+        .rechercher {
+            display: flex;
+        }
+        
+        form {
+            display: flex;
+            align-items: center;
+            padding: 10px 0 10px 0;
+        }
+        
+        form i {
+            display: flex;
+            align-items: center;
+            border: solid 1px #F2F2F2;
+            border-radius: 10px 0 0 10px;
+            background-color: #f2f2f2;
+            padding: 13px;
+        }
+        
+        form input {
+            border: solid 1px #F2F2F2;
+            padding: 10px;
+            font-size: large;
+        }
+        
+        form button {
+            border: solid 1px #F2F2F2;
+            border-radius: 0 10px 10px 0;
+            background-color: #0065FC;
+            color: white;
+            padding: 10px;
+            font-size: large;
+        }
+        
+        form button:hover {
+            cursor: pointer;
+            color: black;
+            background-color: #f2f2f2;
+        }
+        /*Filtres*/
+        
+        .filtres {
+            display: flex;
+            font-weight: bolder;
+            margin: 40px 0 10px 0;
+        }
+        
+        .fi {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .fi span {
+            display: flex;
+            margin: 13px 20px 13px 15px;
+        }
+        
+        .titrefiltre {
+            display: flex;
+            align-items: center;
+            margin-right: 35px;
+        }
+        
+        .filtre1 {
+            display: flex;
+            align-items: center;
+            border: solid 2px #F2F2F2;
+            border-radius: 25px;
+            background-color: white;
+            margin-right: 35px;
+        }
+        
+        #billet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0065FC;
+            background-color: #DEEBFF;
+            border-radius: 100%;
+            height: 3rem;
+            width: 3rem
+        }
+        
+        .filtre2 {
+            display: flex;
+            align-items: center;
+            border: solid 2px #F2F2F2;
+            border-radius: 25px;
+            background-color: white;
+            margin-right: 35px;
+        }
+        
+        #homme {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0065FC;
+            background-color: #DEEBFF;
+            border-radius: 100%;
+            height: 3rem;
+            width: 3rem
+        }
+        
+        .filtre3 {
+            display: flex;
+            align-items: center;
+            border: solid 2px #F2F2F2;
+            border-radius: 25px;
+            background-color: white;
+            margin-right: 35px;
+        }
+        
+        #coeur {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0065FC;
+            background-color: #DEEBFF;
+            border-radius: 100%;
+            height: 3rem;
+            width: 3rem
+        }
+        
+        .filtre4 {
+            display: flex;
+            align-items: center;
+            border: solid 2px #F2F2F2;
+            border-radius: 25px;
+            background-color: white;
+            margin-right: 35px;
+        }
+        
+        #animal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0065FC;
+            background-color: #DEEBFF;
+            border-radius: 100%;
+            height: 3rem;
+            width: 3rem
+        }
+        
+        .filtre1:hover {
+            color: #0065FC;
+            background-color: #F2F2F2;
+            cursor: pointer;
+        }
+        
+        .filtre2:hover {
+            color: #0065FC;
+            background-color: #F2F2F2;
+            cursor: pointer;
+        }
+        
+        .filtre3:hover {
+            color: #0065FC;
+            background-color: #F2F2F2;
+            cursor: pointer;
+        }
+        
+        .filtre4:hover {
+            color: #0065FC;
+            background-color: #F2F2F2;
+            cursor: pointer;
+        }
+        /*Info*/
+        
+        .info {
+            display: flex;
+            margin: 15px 0 20px 0;
+        }
+        
+        .info i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0065FC;
+            background-color: white;
+            border: 1px solid #f2f2f2;
+            border-radius: 100%;
+            height: 2rem;
+            width: 2rem;
+            margin-right: 10px;
+        }
+        
+        .info p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*blocs: Hebergements à Marseille + Les plus populaires*/
+        
+        .MARPOP {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0 60px 0;
+        }
+        /* 1-Hébergements à Marseille*/
+        
+        .titre1 {
+            margin: 30px 0 20px 50px;
+        }
+        
+        .hebergementMar {
+            display: flex;
+            flex-direction: column;
+            background-color: #f2f2f2;
+            border-radius: 25px;
+            width: 65%;
+        }
+        
+        .container1 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+            border-radius: 25px;
+        }
+        
+        .HAM {
+            width: 16em;
+            /*270px*/
+            height: 13em;
+            /*210px*/
+            background-color: white;
+            border: 5px solid white;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 5px #d1cfcf;
+        }
+        
+        .HAM img {
+            width: 100%;
+            height: 60%;
+            border: 1px solid white;
+            border-radius: 25px 25px 0 0;
+            object-fit: cover;
+        }
+        
+        .Mar {
+            margin-left: 10px;
+        }
+        
+        .Mar h3,
+        .Mar p {
+            margin-bottom: 5px;
+        }
+        
+        .aff {
+            margin: 10px 0 20px 50px;
+        }
+        /* 2-Les plus populaires*/
+        
+        .populaire {
+            display: flex;
+            flex-direction: column;
+            background-color: #f2f2f2;
+            border-radius: 25px;
+            width: 32%;
+        }
+        
+        .haut {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 30px 20px 40px;
+        }
+        
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px;
+            width: 80%;
+            margin-left: 40px;
+        }
+        
+        .pop {
+            display: flex;
+            height: 150px;
+            background-color: white;
+            border: 5px solid white;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 5px #d1cfcf;
+        }
+        
+        .pop img {
+            width: 150px;
+            height: 100%;
+            border: 1px solid white;
+            border-radius: 25px 0 0 25px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        
+        .textpopu {
+            margin-left: 10px;
+        }
+        
+        .textpopu h3 {
+            margin-bottom: 5px;
+        }
+        
+        .stars {
+            position: relative;
+            top: 50px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .MARPOP a:hover {
+            color: #0065FC;
+        }
+        
+        .pop:hover {
+            background-color: #f2f2f2;
+        }
+        /* 3-Activités à Marseille*/
+        
+        .container3 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 20px 0 50px 0;
+        }
+        
+        .container3 h3 {
+            border-radius: 0 0 25px 25px;
+            margin: 20px 0 20px 20px;
+        }
+        
+        .act {
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #d1cfcf;
+        }
+        
+        .colonneS,
+        .colonneM {
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+        }
+        
+        .colonneS {
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #d1cfcf;
+        }
+        
+        .colonneM {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .colonneS img,
+        .colonneM img {
+            width: 100%;
+            border-radius: 25px 25px 0 0;
+        }
+        
+        #port,
+        #calanques {
+            height: 450px;
+            object-fit: cover;
+        }
+        
+        #fort {
+            height: 240px;
+            object-fit: cover;
+        }
+        
+        #iles {
+            height: 100px;
+            object-fit: cover;
+        }
+        
+        #dame,
+        #parc {
+            height: 170px;
+            object-fit: cover;
+        }
+        
+        .container3 h3:hover {
+            color: #0065FC;
+        }
+        /*footer*/
+        
+        footer {
+            flex-shrink: 0;
+            /* flex-shrink:pour éviter que le footer soit réduit avec flexbox*/
+            background-color: #f2f2f2;
+            width: 100%;
+        }
+        
+        .lefooter {
+            width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            padding: 40px 0 60px 60px;
+        }
+        
+        .Bloc {
+            width: 25%;
+            margin: 0 80px 0 0;
+        }
+        /*h3*/
+        
+        .apropos h3,
+        .noshebergements h3,
+        .assistance h3 {
+            padding-bottom: 20px;
+        }
+        
+        .liste-ap li,
+        .liste-heb li,
+        .liste-ass li {
+            padding: 5px 0;
+        }
+        
+        .lefooter a:hover {
+            color: #0065FC;
+        }
