@@ -31,6 +31,7 @@
         .entete {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
         
         .navbar {
@@ -157,7 +158,6 @@
         .fi {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
         }
         
         .fi span {
@@ -315,16 +315,17 @@
         .hebergementMar {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             background-color: #f2f2f2;
             border-radius: 25px;
             width: 65%;
         }
         
         .container1 {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 20px;
+            margin-left: 35px;
             border-radius: 25px;
         }
         
@@ -359,6 +360,7 @@
         
         .aff {
             margin: 10px 0 20px 50px;
+            font-weight: bold;
         }
         /* 2-Les plus populaires*/
         
@@ -406,6 +408,7 @@
         
         .textpopu {
             margin-left: 10px;
+            position: relative;
         }
         
         .textpopu h3 {
@@ -413,8 +416,9 @@
         }
         
         .stars {
-            position: relative;
-            top: 50px;
+            position: absolute;
+            bottom: 5px;
+            left: 0;
         }
         
         a {
@@ -434,6 +438,7 @@
         .container3 {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             width: 100%;
             margin: 20px 0 50px 0;
         }
@@ -535,4 +540,57 @@
         
         .lefooter a:hover {
             color: #0065FC;
+        }
+        /*responsive*/
+        
+        @media only screen and (max-width: 1254px) {
+            .wrapper {
+                margin: 0 20px 0 20px;
+            }
+            .fi li {
+                margin-bottom: 15px;
+            }
+            .MARPOP {
+                display: flex;
+                flex-direction: column;
+            }
+            .hebergementMar {
+                width: 100%;
+            }
+            .container1 {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 45%);
+            }
+            .HAM {
+                width: 100%;
+            }
+            .populaire {
+                width: 100%;
+                order: -1;
+                margin-bottom: 30px;
+            }
+            .pop {
+                width: 310px;
+                margin-right: 20px;
+            }
+            .container2 {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            .container3 {
+                display: flex;
+                justify-content: flex-start;
+            }
+            .colonneS,
+            .colonneM {
+                margin: 0 20px 50px 20px;
+            }
+            .lefooter {
+                width: 100%;
+            }
         }
