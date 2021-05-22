@@ -37,11 +37,12 @@ header {
 .entete {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 .navbar {
     display: flex;
+    flex-direction: row-reverse;
     margin-bottom: 40px;
 }
 
@@ -71,6 +72,7 @@ li a {
     color: #0065FC;
     padding-top: 40px;
     border-top: solid transparent;
+    margin-right: 10px;
 }
 
 .hebergement {
@@ -566,37 +568,40 @@ footer {
 /*responsive Mobile*/
 
 @media only screen and (max-width:604px) {
-    .wrapper {
-        max-width: 375px;
-    }
     .logo {
-        margin-left: 20px;
+        margin-left: 0;
     }
     .entete {
+        display: flex;
+        flex-direction: column;
         position: relative;
-        margin: 0 -20px;
+        margin: 0;
     }
     .login {
         position: absolute;
-        top: 10px;
+        top: 0;
         right: 0;
-        margin-right: 10px;
     }
     .navbar {
         width: 100%;
-        padding-bottom: 15px;
-        border-bottom: solid 5px #f2f2f2;
+        margin: 0;
     }
-    .navbar a {
-        margin-left: 50px;
+    .navbar ul {
+        width: 100%;
+    }
+    .navbar li {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 10px;
+        border-bottom: solid 4px #f2f2f2;
     }
     .navbar .hebergement,
     .navbar .activites {
         border-top: none;
+        margin-left: 30px;
     }
-    .navbar a:hover {
-        color: #0065FC;
-        border-bottom: #0065FC;
+    .navbar li:hover {
+        border-bottom: solid 4px #0065fc;
     }
     /*barre de recherche*/
     .rechfiltresinfo {
