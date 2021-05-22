@@ -560,7 +560,10 @@ footer {
         flex-direction: column;
     }
     .pop {
-        width: 70%;
+        width: 100%;
+    }
+    .pop img {
+        width: 30%;
     }
 }
 
@@ -583,8 +586,7 @@ footer {
         right: 0;
     }
     .navbar {
-        width: 100%;
-        margin: 0;
+        margin: 0 -20px;
     }
     .navbar ul {
         width: 100%;
