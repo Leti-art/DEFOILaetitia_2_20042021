@@ -20,7 +20,7 @@ body {
 
 .wrapper {
     max-width: 1440px;
-    margin: auto;
+    margin: 0 20px 0 20px;
     /* grow shrink basis*/
     flex: 1 0 auto;
 }
@@ -59,9 +59,11 @@ header {
     text-decoration: none;
 }
 
-.navbar li {
+.navbar ul li {
     display: flex;
-    margin-right: 30px;
+    border-top: solid transparent;
+    color: black;
+    padding: 40px 30px 0 30px;
 }
 
 li a {
@@ -75,24 +77,7 @@ li a {
     margin-right: 10px;
 }
 
-.hebergement {
-    padding-top: 40px;
-    border-top: solid transparent;
-    color: black;
-}
-
-.activites {
-    padding-top: 40px;
-    border-top: solid transparent;
-    color: black;
-}
-
-.hebergement:hover {
-    color: #0065FC;
-    border-top: solid #0065FC;
-}
-
-.activites:hover {
+.navbar ul li:hover {
     color: #0065FC;
     border-top: solid #0065FC;
 }
@@ -570,7 +555,7 @@ footer {
 
 /*responsive Mobile*/
 
-@media only screen and (max-width:604px) {
+@media only screen and (max-width:606px) {
     .logo {
         margin-left: 0;
     }
@@ -591,23 +576,25 @@ footer {
     .navbar ul {
         width: 100%;
     }
-    .navbar li {
+    .navbar ul li {
         width: 100%;
         margin-right: 0;
         padding-bottom: 10px;
         border-bottom: solid 4px #f2f2f2;
+        border-top: none;
     }
     .navbar .hebergement,
     .navbar .activites {
-        border-top: none;
         margin-left: 30px;
     }
-    .navbar li:hover {
+    .navbar ul li:hover {
         border-bottom: solid 4px #0065fc;
+        border-top: none;
     }
     /*barre de recherche*/
     .rechfiltresinfo {
         width: 100%;
+        overflow: hidden;
     }
     .titres .soustitre {
         margin-top: 10px;
@@ -715,17 +702,25 @@ footer {
         height: 150px;
     }
     /*lefooter*/
+    footer {
+        max-width: 375px;
+        overflow: hidden;
+    }
     .lefooter {
+        width: 80%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding: 0;
     }
     .Bloc {
-        width: 350px;
-        margin-bottom: 40px;
+        width: 100%;
+        margin: 0 0 40px 0;
+        padding: 0;
     }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 606px) {
     .iphone {
         display: none;
     }
