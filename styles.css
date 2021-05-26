@@ -20,9 +20,10 @@ body {
 
 .wrapper {
     max-width: 1440px;
-    margin: 0 20px 0 20px;
+    padding: 0 20px 0 20px;
     /* grow shrink basis*/
     flex: 1 0 auto;
+    margin: 0 auto;
 }
 
 
@@ -63,7 +64,7 @@ header {
     display: flex;
     border-top: solid transparent;
     color: black;
-    padding: 40px 30px 0 30px;
+    padding: 40px 50px 0 40px;
 }
 
 li a {
@@ -99,7 +100,7 @@ li a {
 }
 
 .titre {
-    font-size: x-large;
+    font-size: 30px;
 }
 
 
@@ -126,8 +127,14 @@ form i {
 
 form input {
     border: solid 1px #F2F2F2;
-    padding: 10px;
-    font-size: large;
+    padding: 9px;
+    font-size: 20px;
+}
+
+#chercher::placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 form button {
@@ -240,7 +247,7 @@ form button:hover {
 /* 1-Hébergements à Marseille*/
 
 .titre1 {
-    margin: 30px 0 20px 50px;
+    padding: 30px 0 20px 50px;
 }
 
 .hebergementMar {
@@ -288,11 +295,16 @@ form button:hover {
 }
 
 .Mar h3 {
-    font-size: medium;
+    font-size: 18px;
 }
 
 .aff {
-    margin: 10px 0 20px 50px;
+    padding: 10px 0 20px 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.prix {
     font-weight: bold;
 }
 
@@ -313,6 +325,10 @@ form button:hover {
     margin: 30px 30px 20px 40px;
 }
 
+.haut i {
+    font-size: 20px;
+}
+
 .container2 {
     display: flex;
     flex-direction: column;
@@ -322,7 +338,7 @@ form button:hover {
 
 .pop {
     display: flex;
-    height: 140px;
+    height: 30%;
     background-color: white;
     border: 5px solid white;
     border-radius: 25px;
@@ -331,7 +347,7 @@ form button:hover {
 }
 
 .pop img {
-    width: 150px;
+    width: 40%;
     height: 100%;
     border: 1px solid white;
     border-radius: 25px 0 0 25px;
@@ -340,9 +356,8 @@ form button:hover {
 }
 
 .textpopu {
-    margin-left: 25px;
-    margin-top: 15px;
     position: relative;
+    padding: 15px 20px 0 25px;
 }
 
 .textpopu h3 {
@@ -353,7 +368,7 @@ form button:hover {
 .stars {
     position: absolute;
     bottom: 5px;
-    left: 0;
+    left: 25px;
 }
 
 a {
@@ -480,12 +495,9 @@ footer {
 }
 
 
-/*responsive* *Tablette*/
+/*responsive*/
 
-@media only screen and (max-width: 1350px) {
-    .wrapper {
-        margin: 0 20px 0 20px;
-    }
+@media only screen and (max-width: 1374px) {
     .iphone {
         display: none;
     }
@@ -504,7 +516,7 @@ footer {
     .container1 {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 45%);
+        grid-template-columns: repeat(2, 1fr);
     }
     .HAM {
         width: 100%;
@@ -521,7 +533,8 @@ footer {
         flex-wrap: wrap;
     }
     .pop {
-        width: 32%;
+        width: 30%;
+        height: 150px;
         margin-right: 10px;
     }
     /*section activités à Marseille*/
@@ -556,6 +569,7 @@ footer {
 /*responsive Mobile*/
 
 @media only screen and (max-width:606px) {
+    /*barre de navigation*/
     .logo {
         margin-left: 0;
     }
@@ -582,10 +596,7 @@ footer {
         padding-bottom: 10px;
         border-bottom: solid 4px #f2f2f2;
         border-top: none;
-    }
-    .navbar .hebergement,
-    .navbar .activites {
-        margin-left: 30px;
+        justify-content: center;
     }
     .navbar ul li:hover {
         border-bottom: solid 4px #0065fc;
@@ -598,6 +609,9 @@ footer {
     }
     .titres .soustitre {
         margin-top: 10px;
+    }
+    .titre {
+        font-size: 25px;
     }
     .rechercher {
         display: flex;
@@ -671,7 +685,7 @@ footer {
         background-color: transparent;
     }
     .hebergementMar h2 {
-        margin: 30px 0 20px 10px;
+        padding: 30px 0 20px 10px;
     }
     .container1 {
         width: 100%;
@@ -684,7 +698,7 @@ footer {
         height: 194px;
     }
     .aff {
-        font-size: larger;
+        margin: 0;
     }
     /*Activités à Marseille*/
     .container3 {
@@ -703,7 +717,6 @@ footer {
     }
     /*lefooter*/
     footer {
-        max-width: 375px;
         overflow: hidden;
     }
     .lefooter {
@@ -712,6 +725,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         padding: 0;
+        padding-top: 40px;
     }
     .Bloc {
         width: 100%;
