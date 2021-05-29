@@ -131,7 +131,7 @@ form input {
     font-size: 20px;
 }
 
-#chercher::placeholder {
+input::placeholder {
     color: black;
     font-weight: bold;
     font-size: 15px;
